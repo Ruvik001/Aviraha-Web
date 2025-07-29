@@ -12,7 +12,7 @@ const Services = () => {
       icon: Building2,
       title: "Vin-Pravaha: Corporate Mindfulness",
       description: "Transform your workplace culture with evidence-based mindfulness programs designed for modern professionals.",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtZWRpdGF0aW9ufGVufDB8fHx8MTc1MzY4MTQ1Nnww&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       features: ["Leadership Presence and Focus Reset", "Team Cohesion & Alignment Circles", "Sound Healing For Stress Relief", "Productivity Through Breath And Stillness"],
       color: "from-primary-500 to-primary-700"
     },
