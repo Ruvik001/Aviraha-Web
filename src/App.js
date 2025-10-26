@@ -5,6 +5,7 @@ import axios from "axios";
 
 // Import Components
 import Hero from "./components/Hero";
+Import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Hero />
+      <Header/>
       <About />
       <Services />
       <Testimonials />
