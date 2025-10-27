@@ -48,15 +48,6 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mb-6"
           >
-            <p className="font-display text-2xl md:text-3xl lg:text-4xl text-gold-300 italic mb-4">
-              "In the stillness between sounds, healing frequencies whisper"
-            </p>
-            <p className="text-sm text-white/60">- Rithvik Maheshwari</p>
-          </motion.div>
-
-          <p className="font-body text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
-            Elevate your consciousness through ancient wisdom and modern science
-          </p>
           <p className="font-body text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
             Experience transformative wellness through corporate mindfulness programs, 
             sound healing retreats, and cutting-edge longevity science.

@@ -94,7 +94,7 @@ const About = () => {
               className="absolute -top-6 -left-6 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">50+</div>
+                <div className="text-2xl font-bold text-primary-600">1000+</div>
                 <div className="text-sm text-neutral-600">Lives Transformed</div>
               </div>
             </motion.div>
