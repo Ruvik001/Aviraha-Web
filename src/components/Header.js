@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +8,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -24,47 +22,23 @@ const Header = () => {
       dropdown: [
         { name: 'Corporate Mindfulness', href: '#services' },
         { name: 'Aura Retreats', href: '#retreats' },
-        { name: 'Women Empowerment', href: '#services' }
-      ]
+        { name: 'Women Empowerment', href: '#services' },
+      ],
     },
     { name: 'Retreats', href: '#retreats' },
     { name: 'Team', href: '#team' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' }
   ];
 
   return (
     <>
-      {/* Top Bar */}
-      <motion.div
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        className="bg-gradient-to-r from-primary-900 to-gold-900 text-white py-2 px-6 hidden md:block"
-      >
-        <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="mailto:connect@aviraha.in" className="flex items-center gap-2 hover:text-gold-300 transition-colors">
-              <Mail size={16} />
-              connect@aviraha.in
-            </a>
-            <a href="tel:+919828007008" className="flex items-center gap-2 hover:text-gold-300 transition-colors">
-              <Phone size={16} />
-              +91-9828007008
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="text-gold-300">✨ Transform Your Workplace Wellness</span>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Main Navigation */}
+      {/* Main Header */}
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled 
-            ? 'bg-neutral-900/95 backdrop-blur-lg shadow-2xl border-b border-white/10' 
+          scrolled
+            ? 'bg-neutral-900/95 backdrop-blur-lg shadow-2xl border-b border-white/10'
             : 'bg-transparent'
         }`}
       >
@@ -77,14 +51,18 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img 
+              <img
                 src={`${process.env.PUBLIC_URL}/og-image.png`}
                 alt="Aviraha Logo"
                 className="h-12 w-auto"
               />
               <div className="hidden lg:block">
-                <div className="text-xl font-display font-bold text-white">AVIRAHA</div>
-                <div className="text-xs text-gold-400">Where Stillness Becomes Strength</div>
+                <div className="text-xl font-display font-bold text-white">
+                  AVIRAHA
+                </div>
+                <div className="text-xs text-gold-400">
+                  Where Stillness Becomes Strength
+                </div>
               </div>
             </motion.a>
 
@@ -106,7 +84,7 @@ const Header = () => {
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-gold-400 group-hover:w-full transition-all duration-300"></span>
                   </a>
 
-                  {/* Dropdown Menu */}
+                  {/* Dropdown */}
                   {link.dropdown && activeDropdown === link.name && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
@@ -114,7 +92,7 @@ const Header = () => {
                       exit={{ opacity: 0, y: 10 }}
                       className="absolute top-full left-0 mt-2 w-64 bg-neutral-900/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/10 overflow-hidden"
                     >
-                      {link.dropdown.map((item, index) => (
+                      {link.dropdown.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
