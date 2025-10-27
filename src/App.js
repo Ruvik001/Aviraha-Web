@@ -5,13 +5,18 @@ import axios from "axios";
 
 // Import Components
 import Hero from "./components/Hero";
-Import Header from "./components/Header";
+import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Retreats from "./components/Retreats";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Stats from "./components/Stats";
+import Team from "./components/Team";
+import FAQ from "./components/FAQ";
+import CTA from "./components/CTA";
+import Philosophy from "./components/Philosophy";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -31,13 +36,18 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <Header />
       <Hero />
-      <Header/>
+      <Stats />
       <About />
+      <Philosophy />
       <Services />
+      <Team />
       <Testimonials />
       <Retreats />
+      <FAQ />
+      <CTA />
       <Contact />
       <Footer />
     </div>

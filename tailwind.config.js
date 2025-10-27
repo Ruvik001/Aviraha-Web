@@ -2,22 +2,22 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9f0',
-          100: '#dcf2dc',
-          200: '#bce6bc',
-          300: '#8dd48d',
-          400: '#56ba56',
-          500: '#2d9a2d',
-          600: '#1f7e1f',
-          700: '#1a661a',
-          800: '#155115',
-          900: '#0d3c0d',
+          50: '#f0f4ff',
+          100: '#e0e8ff',
+          200: '#c7d5fe',
+          300: '#a5b8fc',
+          400: '#818df8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+          950: '#1e1b4b',
         },
         gold: {
           50: '#fffbeb',
@@ -25,11 +25,12 @@ module.exports = {
           200: '#fde68a',
           300: '#fcd34d',
           400: '#fbbf24',
-          500: '#d97706',
-          600: '#b45309',
-          700: '#92400e',
-          800: '#78350f',
-          900: '#451a03',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+          950: '#451a03',
         },
         neutral: {
           50: '#fafafa',
@@ -42,45 +43,66 @@ module.exports = {
           700: '#404040',
           800: '#262626',
           900: '#171717',
-        }
+          950: '#0a0a0a',
+        },
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'body': ['Inter', 'sans-serif'],
-      },
-      backdropBlur: {
-        xs: '2px',
+        display: ['Playfair Display', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'fade-in-up': 'fade-in-up 0.6s ease-out',
-        'fade-in': 'fade-in 0.8s ease-out',
-        'slide-in-left': 'slide-in-left 0.8s ease-out',
-        'slide-in-right': 'slide-in-right 0.8s ease-out',
+        'fade-in': 'fadeIn 0.8s ease-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'slide-down': 'slideDown 0.6s ease-out',
+        'scale-in': 'scaleIn 0.5s ease-out',
+        'blob': 'blob 7s infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.9)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        blob: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+          '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
-        'fade-in-up': {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        'fade-in': {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        'slide-in-left': {
-          '0%': { opacity: '0', transform: 'translateX(-30px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        'slide-in-right': {
-          '0%': { opacity: '0', transform: 'translateX(30px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-      }
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(139, 92, 246, 0.3)',
+        'glow-gold': '0 0 20px rgba(245, 158, 11, 0.3)',
+        'inner-lg': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}
