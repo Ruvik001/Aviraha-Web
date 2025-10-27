@@ -26,7 +26,7 @@ const Stats = () => {
   const stats = [
     {
       icon: Users,
-      value: 10000,
+      value: 1000,
       suffix: '+',
       label: 'Lives Transformed',
       gradient: 'from-blue-500 to-cyan-500',
@@ -34,7 +34,7 @@ const Stats = () => {
     },
     {
       icon: TrendingUp,
-      value: 500,
+      value: 50,
       suffix: '+',
       label: 'Sessions Conducted',
       gradient: 'from-purple-500 to-pink-500',
@@ -42,7 +42,7 @@ const Stats = () => {
     },
     {
       icon: Award,
-      value: 50,
+      value: 10,
       suffix: '+',
       label: 'Corporate Clients',
       gradient: 'from-gold-500 to-amber-500',

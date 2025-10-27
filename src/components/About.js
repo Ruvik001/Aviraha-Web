@@ -36,7 +36,7 @@ const About = () => {
               </p>
               
               <p>
-                Founded by <strong>Rithvik Maheshwari (Aka Bharat Chandak)</strong>, a visionary in meditation, sound healing, and longevity science—Aviraha is a sanctuary 
+                Founded by <strong>Bharat Chandak (Aka Rithvik Maheshwari)</strong>, a visionary in meditation, sound healing, and longevity science—Aviraha is a sanctuary 
 		for those seeking more than temporary relief. From high-performance corporate wellness to profound spiritual 
 		awakening, our programs are grounded in research and designed for measurable impact.
               </p>

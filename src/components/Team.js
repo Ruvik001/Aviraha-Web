@@ -20,7 +20,7 @@ const Team = () => {
       email: 'bharat@aviraha.in',
       bio: 'A Chartered Accountant and former corporate leader who discovered the transformative power of mindfulness and sound healing. Bharat bridges the gap between corporate efficiency and conscious living.',
       achievements: [
-        'Led wellness programs for 50+ corporations',
+        'Led wellness programs for 10+ corporations',
         'Researched corporate stress for 10+ years',
         'Expert in AI-driven wellness analytics'
       ],
