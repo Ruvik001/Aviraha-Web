@@ -15,21 +15,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/10 via-primary-900/30 to-gold-800/50"></div>
       </div>
 
-      {/* Top-Left Logo */}
-      <div className="absolute top-4 left-4 z-20">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          <img 
-            src={`${process.env.PUBLIC_URL}/og-image.png`}
-            alt="Aviraha Logo"
-            className="w-32 md:w-40 lg:w-48"
-          />
-        </motion.div>
-      </div>
-
       {/* Centered Hero Content */}
       <div className="relative z-10 px-6 max-w-5xl mx-auto text-center">
         <motion.div
