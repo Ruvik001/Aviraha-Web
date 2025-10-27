@@ -204,4 +204,3 @@ const Header = () => {
 };
 
 export default Header;
-Self hosting website code - Claude
