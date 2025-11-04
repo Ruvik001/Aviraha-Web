@@ -14,7 +14,7 @@ const BackgroundMusicPlayer = () => {
   const musicTracks = [
     {
       name: "Sacred Healing",
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" // Replace with your actual music URL
+      url: "https://youtu.be/NSKxvLWqyOY?si=n0NsBoQkrvVgEPcr" // Replace with your actual music URL
     }
   ];
 
