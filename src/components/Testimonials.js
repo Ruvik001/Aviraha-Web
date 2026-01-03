@@ -19,7 +19,7 @@ const Testimonials = () => {
     {
       name: "Ravi Singh",
       role: "Managing Director",
-      image: "/images/Ravi Singh.png",
+      image: "/images/Ravi.png",
       content: "Aviraha's session was a refreshing break from our high-pressure routines. The sound healing and mindfulness techniques brought an unexpected sense of clarity and calm. It’s rare to find something so simple yet so effective in restoring inner peace and balance amidst corporate chaos.",
       rating: 5,
       company: "Radius Infotech Pvt Ltd"
