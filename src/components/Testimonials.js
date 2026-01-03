@@ -17,20 +17,20 @@ const Testimonials = () => {
       company: "Gravity Bath Fittings"
     },
     {
-      name: "Ajay Modi",
-      role: "Manager",
-      image: "/images/Ajay.jpeg",
+      name: "Ravi Singh",
+      role: "Managing Director",
+      image: "/images/Ravi Singh.png",
       content: "Aviraha's session was a refreshing break from our high-pressure routines. The sound healing and mindfulness techniques brought an unexpected sense of clarity and calm. It’s rare to find something so simple yet so effective in restoring inner peace and balance amidst corporate chaos.",
       rating: 5,
-      company: "National Land Monetization Corporation"
+      company: "Radius Infotech Pvt Ltd"
     },
     {
-      name: "Rohin Koppuravuri",
-      role: "Deputy Director",
-      image: "/images/Rohin.jpeg",
+      name: "Ajay Modi",
+      role: "Finance Manager",
+      image: "/images/Ajay.jpeg",
       content: "Aviraha’s mindfulness workshop was deeply grounding. In just one session, it created a space of stillness and mental clarity that we often miss in the fast-paced policy environment. It’s a much-needed initiative for enhancing well-being across organisations and government departments.",
       rating: 5,
-      company: "Department of Public Enterprises, Ministry of Finance"
+      company: "National Land Monetization Corporation"
     }
   ];
 
